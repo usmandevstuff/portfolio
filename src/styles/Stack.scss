@@ -1,0 +1,40 @@
+.stack {
+	display: flex;
+	flex-direction: column;
+
+	> * {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+
+		&.list {
+			border: 1px solid var(--primary-color);
+			padding: 1rem;
+			border-radius: var(--border-radius);
+			margin-bottom: 1rem;
+
+			background-color: var(--box-bg);
+			border-radius: var(--border-radius);
+			box-shadow: var(--box-shadow);
+		}
+
+		.icon {
+			&:hover {
+				transform: scale(1.1);
+				transition: transform 0.5s;
+			}
+		}
+	}
+}
+
+body.light {
+	.stack {
+		> * {
+			&.list {
+				border: 1px solid black;
+			}
+		}
+	}
+}
