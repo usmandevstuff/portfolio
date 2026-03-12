@@ -75,6 +75,7 @@ export const fetchUser = (id, callback, onError) =>
 		}))
 		.then(callback)
 		.catch(onError);
+		
 
 export const fetchAPI = (id, callback, onError) =>
 	fetch(`https://dcdn.dstn.to/profile/${id}`)
