@@ -174,7 +174,7 @@ const App: React.FC = () => {
 							className={classNames("username", getDisplayNameStyleClassname(data?.display_name_styles))}
 							style={getDisplayNameStyleEffectVars(data?.display_name_styles)}
 						>
-							Kyrie
+							Usman
 						</span>
 						!
 					</h2>

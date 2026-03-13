@@ -23,7 +23,7 @@ export const Stats = ({ loaded }: { loaded: (loaded: boolean) => void }) => {
 	const [stats, setStats] = useState<StatsData | Record<string, never> | null>(null);
 
 	useEffect(() => {
-		fetchGitHubStats("kyrie25", setStats, () => setStats({}));
+		fetchGitHubStats("usmandevstuff", setStats, () => setStats({}));
 	}, []);
 
 	useEffect(() => {
