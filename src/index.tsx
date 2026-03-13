@@ -65,6 +65,9 @@ const App: React.FC = () => {
 	const banner = `https://cdn.discordapp.com/banners/${data?.id}/${data?.banner}.webp?${
 		data?.banner?.startsWith("a_") ? "animated=true&size=2048" : "size=4096"
 	}`;
+
+	//const banner = "https://pbs.twimg.com/media/HA355ijbYAA2lL4?format=jpg&name=4096x4096"
+
 	const decoration = `https://cdn.discordapp.com/avatar-decoration-presets/${data?.avatar_decoration_data?.asset}.png`;
 
 	useEffect(() => {
