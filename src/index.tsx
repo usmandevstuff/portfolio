@@ -152,7 +152,7 @@ const App: React.FC = () => {
 									alt="avatar"
 									onLoad={() => setLoadingState((prevState) => ({ ...prevState, avatar: true }))}
 									onError={(e) => {
-										e.currentTarget.src = "https://avatars.githubusercontent.com/u/77577746?v=4";
+										e.currentTarget.src = "https://avatars.githubusercontent.com/u/165644260?v=4";
 										setLoadingState((prevState) => ({ ...prevState, avatar: true }));
 									}}
 								/>
@@ -194,12 +194,12 @@ const App: React.FC = () => {
 						focuses mainly on web & app development.
 						<br />
 						<br />
-						You may have seen some of my open-source contributions on my <Anchor href="https://github.kyrie25.dev">GitHub</Anchor>, namely the
+						You may have seen some of my open-source contributions on my <Anchor href="https://github.com/usmandevstuff">GitHub</Anchor>, namely the
 						<Img src="https://spicetify.app/images/spicetify.png" className="icon inline" />
 						<Anchor href="https://spicetify.app/">Spicetify</Anchor> CLI.
 						<br />
 						<br />
-						Outside of work, I enjoy playing rougelite and hack-n-slash games (as seen from my <Anchor href="https://steam.kyrie25.dev">
+						Outside of work, I enjoy playing rougelite and hack-n-slash games (as seen from my <Anchor href="http://steamcommunity.com/id/usmandevstuff37">
 							Steam
 						</Anchor>{" "}
 						profile), and listening to <i>whatever</i> doesn't make my ears bleed. You can see the songs I'm listening to or the games I'm playing{" "}
@@ -236,19 +236,19 @@ const App: React.FC = () => {
 				<article>
 					<h3>Contact me via:</h3>
 					<div className="icons">
-						<Anchor href="mailto:contact@kyrie25.dev" title="Mail" data-tooltip-id="tooltip" data-tooltip-content="Email">
+						<Anchor href="mailto:hello@usmn.dev" title="Mail" data-tooltip-id="tooltip" data-tooltip-content="Email">
 							<SiMinutemailer />
 						</Anchor>
-						<Anchor href={`https://discord.kyrie25.dev`} title="Discord" data-tooltip-id="tooltip" data-tooltip-content="Discord">
+						<Anchor href={`https://discord.com/users/1481718152055226611`} title="Discord" data-tooltip-id="tooltip" data-tooltip-content="Discord">
 							<SiDiscord />
 						</Anchor>
-						<Anchor href="https://twitter.kyrie25.dev" title="Twitter" data-tooltip-id="tooltip" data-tooltip-content="Twitter">
+						<Anchor href="https://twitter.com/usmandevstuff" title="Twitter" data-tooltip-id="tooltip" data-tooltip-content="Twitter">
 							<SiX />
 						</Anchor>
-						<Anchor href="https://bsky.kyrie25.dev" title="Bluesky" data-tooltip-id="tooltip" data-tooltip-content="Bluesky">
+						<Anchor href="https://bsky.app/profile/usmn.dev" title="Bluesky" data-tooltip-id="tooltip" data-tooltip-content="Bluesky">
 							<SiBluesky />
 						</Anchor>
-						<Anchor href="https://github.kyrie25.dev" title="GitHub" data-tooltip-id="tooltip" data-tooltip-content="GitHub">
+						<Anchor href="https://github.com/usmandevstuff" title="GitHub" data-tooltip-id="tooltip" data-tooltip-content="GitHub">
 							<SiGithub />
 						</Anchor>
 					</div>
