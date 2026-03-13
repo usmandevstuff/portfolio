@@ -59,9 +59,11 @@ const App: React.FC = () => {
 		}
 	};
 
-	const avatar = `https://cdn.discordapp.com/avatars/${data?.id}/${data?.avatar}.webp?size=256&${
-		data?.avatar?.startsWith("a_") ? "animated=true" : ""
-	}`;
+
+	const avatar = "https://avatars.githubusercontent.com/u/165644260?v=4";
+	//const avatar = `https://cdn.discordapp.com/avatars/${data?.id}/${data?.avatar}.webp?size=256&${
+	//	data?.avatar?.startsWith("a_") ? "animated=true" : ""
+	//}`;
 	//const banner = `https://cdn.discordapp.com/banners/${data?.id}/${data?.banner}.webp?${
 	//	data?.banner?.startsWith("a_") ? "animated=true&size=2048" : "size=4096"
 	//}`;
@@ -125,9 +127,9 @@ const App: React.FC = () => {
 	return (
 		<main>
 			{/* <Img className="background" ref={backgroundImg} /> */}
-			<Img className="background" ref={backgroundImg} src={banner} />
-			{KV.banner && (
-				<Anchor href={KV.banner} title="Banner source" className="media-link icon" data-tooltip-id="tooltip" data-tooltip-content="Banner source">
+			<Img className="background" ref={backgroundImg} src={banner} onLoad={() => setLoadingState(p => ({...p, banner: true}))} />
+			{data?.banner && (
+				<Anchor href={banner} title="Banner source" className="media-link icon" data-tooltip-id="tooltip" data-tooltip-content="Banner source">
 					<FaExternalLinkAlt />
 				</Anchor>
 			)}
@@ -158,8 +160,8 @@ const App: React.FC = () => {
 							</>
 						);
 
-						return KV.avatar ? (
-							<Anchor href={KV.avatar} title="Avatar source" className="avatar" data-tooltip-id="tooltip" data-tooltip-content="Avatar source">
+						return data?.avatar ? (
+							<Anchor href={avatar} title="Avatar source" className="avatar" data-tooltip-id="tooltip" data-tooltip-content="Avatar source">
 								{avatarContent}
 							</Anchor>
 						) : (
@@ -205,7 +207,7 @@ const App: React.FC = () => {
 					</p>
 				</article>
 
-				{(KV.playlist1 || KV.playlist2) && (
+				{/* {(KV.playlist1 || KV.playlist2) && (
 					<article className="music">
 						<h3>My playlists</h3>
 						<div className="music">
@@ -225,7 +227,7 @@ const App: React.FC = () => {
 							)}
 						</div>
 					</article>
-				)}
+				)} */}
 
 				<Stack />
 
