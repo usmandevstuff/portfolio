@@ -62,11 +62,11 @@ const App: React.FC = () => {
 	const avatar = `https://cdn.discordapp.com/avatars/${data?.id}/${data?.avatar}.webp?size=256&${
 		data?.avatar?.startsWith("a_") ? "animated=true" : ""
 	}`;
-	const banner = `https://cdn.discordapp.com/banners/${data?.id}/${data?.banner}.webp?${
-		data?.banner?.startsWith("a_") ? "animated=true&size=2048" : "size=4096"
-	}`;
+	//const banner = `https://cdn.discordapp.com/banners/${data?.id}/${data?.banner}.webp?${
+	//	data?.banner?.startsWith("a_") ? "animated=true&size=2048" : "size=4096"
+	//}`;
 
-	//const banner = "https://pbs.twimg.com/media/HA355ijbYAA2lL4?format=jpg&name=4096x4096"
+	const banner = "https://pbs.twimg.com/media/HA355ijbYAA2lL4?format=jpg&name=4096x4096"
 
 	const decoration = `https://cdn.discordapp.com/avatar-decoration-presets/${data?.avatar_decoration_data?.asset}.png`;
 
@@ -76,9 +76,10 @@ const App: React.FC = () => {
 			setUser,
 			fetchUser(DISCORD_ID, setUser, () => setData({}))
 		);
+		setKV((prevState) => ({ ...prevState, banner: banner }));
 	}, []);
 
-	useEffect(() => {
+	/* useEffect(() => {
 		if (!data?.banner || !backgroundImg.current) return;
 
 		if (banner?.includes("animated")) {
@@ -117,13 +118,14 @@ const App: React.FC = () => {
 				});
 			};
 		}
-	}, [data?.banner]);
+	}, [data?.banner]); */
 
 	const loading = !data || !Object.values(loadingState).every((state) => state);
 
 	return (
 		<main>
-			<Img className="background" ref={backgroundImg} />
+			{/* <Img className="background" ref={backgroundImg} /> */}
+			<Img className="background" ref={backgroundImg} src={banner} />
 			{KV.banner && (
 				<Anchor href={KV.banner} title="Banner source" className="media-link icon" data-tooltip-id="tooltip" data-tooltip-content="Banner source">
 					<FaExternalLinkAlt />
