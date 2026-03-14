@@ -59,6 +59,7 @@ const App: React.FC = () => {
 		}
 	};
 
+	console.log(KV);
 
 	const avatar = "https://avatars.githubusercontent.com/u/165644260?v=4";
 	//const avatar = `https://cdn.discordapp.com/avatars/${data?.id}/${data?.avatar}.webp?size=256&${
@@ -188,26 +189,22 @@ const App: React.FC = () => {
 
 				<article className="bio">
 					<p>
-						I'm a <Age date={BIRTHDAY} /> junior full-stack developer at <Anchor href="https://designveloper.com/">Designveloper</Anchor> and a CS
-						undergraduate at fit@
-						<Anchor href="https://en.hcmus.edu.vn/">hcmus</Anchor>. Starting as a self-taught developer and have been coding since 2021, my expertise
-						focuses mainly on web & app development.
+						I'm a <Age date={BIRTHDAY} /> self-taught developer. Starting as a self-taught developer and have been coding since 2020, my expertise
+						focuses mainly on web, app development & systems programming.
 						<br />
 						<br />
-						You may have seen some of my open-source contributions on my <Anchor href="https://github.com/usmandevstuff">GitHub</Anchor>, namely the
-						<Img src="https://spicetify.app/images/spicetify.png" className="icon inline" />
-						<Anchor href="https://spicetify.app/">Spicetify</Anchor> CLI.
+						You may have seen some of my open-source projects on my <Anchor href="https://github.com/usmandevstuff">GitHub</Anchor>
 						<br />
 						<br />
-						Outside of work, I enjoy playing rougelite and hack-n-slash games (as seen from my <Anchor href="http://steamcommunity.com/id/usmandevstuff37">
+						Outside of work, I enjoy playing games (as seen from my <Anchor href="http://steamcommunity.com/id/usmandevstuff37">
 							Steam
 						</Anchor>{" "}
-						profile), and listening to <i>whatever</i> doesn't make my ears bleed. You can see the songs I'm listening to or the games I'm playing{" "}
+						profile), watching anime ≧◡≦, and listening to <i>whatever</i> doesn't make my ears bleed. You can see the songs I'm listening to or the games I'm playing{" "}
 						<a href="#">on the top of the page</a>.
 					</p>
 				</article>
 
-				{/* {(KV.playlist1 || KV.playlist2) && (
+				{(KV.playlist1 || KV.playlist2) && (
 					<article className="music">
 						<h3>My playlists</h3>
 						<div className="music">
@@ -227,7 +224,7 @@ const App: React.FC = () => {
 							)}
 						</div>
 					</article>
-				)} */}
+				)}
 
 				<Stack />
 

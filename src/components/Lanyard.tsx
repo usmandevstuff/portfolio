@@ -242,6 +242,7 @@ export const Lanyard = ({
 		if (data) {
 			waitTwoFrames(() => loaded(true));
 			setKV(data.kv);
+			console.log(data);
 		}
 	}, [data]);
 
