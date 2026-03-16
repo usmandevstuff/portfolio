@@ -138,14 +138,14 @@ export const Cat = () => {
 
 export const Clock = () => {
 	const dateFormatter = new Intl.DateTimeFormat([], {
-		timeZone: "Asia/Ho_Chi_Minh",
+		timeZone: "Asia/Dubai",
 		weekday: "short",
 		month: "short",
 		day: "numeric",
 	});
 
 	const timeFormatter = new Intl.DateTimeFormat([], {
-		timeZone: "Asia/Ho_Chi_Minh",
+		timeZone: "Asia/Dubai",
 		hour: "numeric",
 		minute: "numeric",
 		second: "numeric",
