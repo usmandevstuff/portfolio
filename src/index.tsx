@@ -196,7 +196,7 @@ const App: React.FC = () => {
 						You may have seen some of my open-source projects on my <Anchor href="https://github.com/usmandevstuff">GitHub</Anchor>
 						<br />
 						<br />
-						Outside of work, I enjoy playing games (as seen from my <Anchor href="http://steamcommunity.com/id/usmandevstuff37">
+						Outside of work, I enjoy playing games (as seen from my <Anchor href="http://steamcommunity.com/id/usmandevstuff">
 							Steam
 						</Anchor>{" "}
 						profile), watching anime ≧◡≦, and listening to <i>whatever</i> doesn't make my ears bleed. You can see the songs I'm listening to or the games I'm playing{" "}
